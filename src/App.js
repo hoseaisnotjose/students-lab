@@ -75,14 +75,21 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        App
+        <div>
+          <div>
+            React "Student" Lab
+          </div>
+          <br/>
+        </div>
+        
         {this.state.students.map((student) => {
           return (
             <div>
               <Student student={student} />
             </div>
           );
-        })}
+        })
+      }
       </div>
     );
   }
